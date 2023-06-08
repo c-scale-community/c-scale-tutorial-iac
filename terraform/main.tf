@@ -11,11 +11,12 @@ terraform {
 # VM flavor
 data "openstack_compute_flavor_v2" "myflavor" {
   vcpus = 8
-  ram   = 16384
+  ram   = 16384 # 16GB = 16 x 1024
 }
 
 # VM image
 data "openstack_images_image_v2" "myimage" {
+  # need to look this up manually
   name        = "Image for EGI Ubuntu 20.04 [Ubuntu/20.04/VirtualBox]"
   most_recent = true
 }
