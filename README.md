@@ -42,7 +42,20 @@ terraform apply
 
 # One-off installation and configuration of the software environment
 
-## Create oidc-agent account
+## Create an EGI Check-in account
+
+Follow the steps [here](https://docs.egi.eu/users/check-in/signup/).
+
+## Enroll a Virtual Organisation (VO)
+
+Ask [C-SCALE support](https://helpdesk.c-scale.eu/) which VO you should enroll.
+We have the
+[eval.c-scale.eu](https://operations-portal.egi.eu/vo/view/voname/eval.c-scale.eu)
+VO as a pilot. To request access you need to visit the
+[enrollment URL](https://perun.egi.eu/egi/registrar/?vo=eval.c-scale.eu)
+with your EGI Check-in account.
+
+## Create an oidc-agent account
 
 First, install [oidc-agent](https://indigo-dc.gitbook.io/oidc-agent/installation)
 and configure it for [EGI Check-in](https://indigo-dc.gitbook.io/oidc-agent/user/oidc-gen/provider/egi).
