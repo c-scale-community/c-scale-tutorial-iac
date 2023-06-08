@@ -37,6 +37,7 @@ resource "openstack_compute_secgroup_v2" "ssh" {
 # Public SSH key
 resource "openstack_compute_keypair_v2" "mykey" {
   name       = "mykey"
+  # replace this with your public SSH key
   public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC6NRGgoa77is6YJGo7xJP1awgMjTDC3b39vEfdTDuN85I8YAGluctwxZjCXTuCFJT6XpnD+8k6NFJytzbcX8ZsIwrFJEwW+xexbaYESnlDfYfF+tSyozMJFGCUzt9BC8tpPbK50gKNJ70rlx6I3biXA1JhhFOwVq661ISwID/akNqHb1lX4T4c9xGJKSm/GpN16KH43BtgXpdznQoVJIp/5cwWqJfmpSe2yVBZqJ3eISFlXXbMwuys8MEvyY0xQRvRIB5P+ACjRQyqrnGGP8rYwtVuvPkUrzrKuLK5J1p0xm4t5aYNGrKyL3WQkk1V4qNN+Acb/yQCyVeInJSE+4fF /home/sebastian/.ssh/id_rsa"
 }
 
